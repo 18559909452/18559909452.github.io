@@ -9,7 +9,9 @@ function updateStaticCache() {
   return caches.open(version + staticCacheName)
     .then(function (cache) {
       return cache.addAll([
-        '/ubuild.dll.e83e29bc75b60fbb2e3a.js'
+        '/ubuild.dll.e83e29bc75b60fbb2e3a.js',
+        '/',
+        '/index.50922793.css'
       ]);
     });
 };
