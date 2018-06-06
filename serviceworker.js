@@ -16,28 +16,28 @@ function updateStaticCache() {
 
 
 
-// this.addEventListener('fetch', function (event) {
-//     event.respondWith(
-//         caches.match(event.request).then(function (response) {
-//             if (response) {
-//                 console.log('cache:' + event.request);
-//                 return response;
-//             }
+this.addEventListener('fetch', function (event) {
+    event.respondWith(
+        caches.match(event.request).then(function (response) {
+            if (response) {
+                console.log('cache:' + event.request.toString());
+                return response;
+            }
 
-//             var request = event.request.clone();
-//             return fetch(request).then(function (httpRes) {
-//                 if (!httpRes || httpRes.status !== 200) {
-//                     return httpRes;
-//                 }
+            var request = event.request.clone();
+            return fetch(request).then(function (httpRes) {
+                if (!httpRes || httpRes.status !== 200) {
+                    return httpRes;
+                }
 
-//                 // 请求成功的话，将请求缓存起来。
-//                 var responseClone = httpRes.clone();
-//                 caches.open(version + staticCacheName).then(function (cache) {
-//                     cache.put(event.request, responseClone);
-//                 });
+                // 请求成功的话，将请求缓存起来。
+                var responseClone = httpRes.clone();
+                caches.open(version + staticCacheName).then(function (cache) {
+                    cache.put(event.request, responseClone);
+                });
 
-//                 return httpRes;
-//             });
-//         })
-//     );
-// });
+                return httpRes;
+            });
+        })
+    );
+});
