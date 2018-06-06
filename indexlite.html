@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <title>织云</title>
+    <meta name="keywords" content="织云,监控,运维,互联网">
+    <meta name="description" content="织云,监控,运维,互联网">
+    <script>
+        (function flexible(window, document) {
+            var docEl = document.documentElement;
+            var tid;
+            var dpr = window.devicePixelRatio || 1;
+            docEl.setAttribute("data-dpr", dpr);
+
+            function setRemUnit() {
+                var width = docEl.getBoundingClientRect().width;
+                if (width > 750) { // 设计稿的宽度是750px
+                    docEl.style.fontSize = 100 + 'px';
+                }
+                else {
+                    var rem = width / 7.5;
+                    docEl.style.fontSize = rem + 'px';
+                }
+            }
+
+            setRemUnit();
+
+            window.addEventListener('resize', function () {
+                clearTimeout(tid);
+                tid = setTimeout(setRemUnit, 200);
+            }, false);
+            window.addEventListener('pageshow', function (e) {
+                if (e.persisted) {
+                    clearTimeout(tid);
+                    tid = setTimeout(setRemUnit, 200);
+                }
+            }, false);
+        }(window, document));
+    </script>
+<link rel="shortcut icon" href="/favicon.ico"><link href="/indexlite.f9c33f29.css" rel="stylesheet"></head>
+
+<body>
+    <div class="header">
+        <div class="wraper">
+            <a href="https://cloud.tencent.com/" target="_blank">
+                <div class="logo-first"></div>
+            </a>
+
+            <div class="gutter"></div>
+            <a href="/">
+                <div class="logo-second"></div>
+            </a>
+
+            <nav>
+                <div class="nav-mobile"><a class="nav-toggle" href="javascript:;"><span></span></a></div>
+                <ul class="nav-list">
+                    <li class="active">
+                        <a href="javascript:;">产品</a>
+                        <ul class="nav-dropdown">
+                            <li>
+                                <a href="/index.html">企业版</a>
+                            </li>
+                            <li class="active">
+                                <a href="/indexlite.html">社区版（Lite）</a>
+                            </li>
+                            <li>
+                                <a href="/indexmetis.html">Metis</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="/userlist.html">解决方案</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">文档中心</a>
+                        <ul class="nav-dropdown">
+                            <li>
+                                <a href="https://cloud.tencent.com/document/product/609" target="_blank">企业版</a>
+                            </li>
+                            <li>
+                                <a href="http://bbs.coc.tencent.com/forum.php?mod=forumdisplay&fid=36" target="_blank">社区版（Lite）</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="/about.html">关于我们</a>
+                    </li>
+                </ul>
+                <div class="nav-line"></div>
+            </nav>
+        </div>
+    </div>
+    <div class="container">
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <a href="/indexlite.html">
+                        <div class="item-image">
+                            <div class="item-title">
+                                <p>织云Lite全新发布</p>
+                                <p class="title-note">极&nbsp;&nbsp;致&nbsp;&nbsp;简&nbsp;&nbsp;约，&nbsp;&nbsp;让&nbsp;&nbsp;运&nbsp;&nbsp;维&nbsp;&nbsp;变&nbsp;&nbsp;得&nbsp;&nbsp;简&nbsp;&nbsp;单</p>
+                                </p>
+                                <object><a href="http://bbs.coc.tencent.com/forum.php?mod=viewthread&tid=50" target="_bank" class="item-btn">立即下载</a></object>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="/indexmetis.html">
+                        <div class="item-image image2">
+                            <div class="item-title">
+                                <p>Metis全新发布</p>
+                                <p class="title-note">织云AIOps体系,智能运维应用实践</p>
+                                </p>
+                                <object><a href="https://wj.qq.com/s/2024612/b6d1" target="_bank" class="item-btn">联系体验</a></object>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="/index.html">
+                        <div class="item-image">
+                            <p class="item-title">企业智能运维门户</p>
+                            <object><a href="/about.html#contact" class="item-btn">联系我们</a></object>
+                        </div>
+                    </a>
+                </div>
+                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true">‹</span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true">›</span>
+                </a>
+            </div>
+        </div>
+        <div class="list-tp">
+            <div class="max-width-pc">
+                <div class="list-tp-item">
+                    <div class="item-image fade-animate-x-left"></div>
+                    <div class="item-title fade-animate-x-right">聚焦核心功能</div>
+                    <div class="item-text fade-animate-x-right">
+                        织云Lite 聚焦包管理核心能力，支持文件管理、版本迭代、进程监控，帮助降低运维复杂度， 保障程序一致性， 提高服务可用率和发布效率。
+                    </div>
+                    <ul class="describe-list fade-animate-x-right">
+                        <li>
+                            <p>
+                                <span class="number">核心</span>
+                            </p>
+
+                            <div class="gutter"></div>
+                        </li>
+                        <li>
+                            <p>
+                                <span class="number">高效</span>
+                            </p>
+
+                            <div class="gutter"></div>
+                        </li>
+                        <li>
+                            <p>
+                                <span class="number">一致</span>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="list-tp-item">
+                    <div class="item-image image2 fade-animate-x-right"></div>
+                    <div class="item-title fade-animate-x-left">轻量发布体验</div>
+                    <div class="item-text fade-animate-x-left">
+                        采用Git存储以及原生的Diff功能，通过对版本间差异文件的增量替换，实现版本升级、降级。操作可靠、响应迅速。
+                    </div>
+                    <ul class="describe-list fade-animate-x-left">
+                        <li>
+                            <p>
+                                <span class="number">轻量</span>
+                            </p>
+
+                            <div class="gutter"></div>
+                        </li>
+                        <li>
+                            <p>
+                                <span class="number">可靠</span>
+                            </p>
+
+                            <div class="gutter"></div>
+                        </li>
+                        <li>
+                            <p>
+                                <span class="number">迅速</span>
+                            </p>
+
+                        </li>
+                    </ul>
+                </div>
+                <div class="list-tp-item">
+                    <div class="item-image image3 fade-animate-x-left"></div>
+                    <div class="item-title fade-animate-x-right">开箱即用,低接入门槛</div>
+                    <div class="item-text fade-animate-x-right">
+                        单机一键部署 （512MB内存， 2G磁盘） 。将文件上传打包，无需重新编译即可接入。进程启停方式可定制，提供包安装升级后置脚本入口，且永久免费。
+                    </div>
+                    <ul class="describe-list fade-animate-x-right">
+                        <li>
+                            <p>
+                                <span class="number">简易</span>
+                            </p>
+
+                            <div class="gutter"></div>
+                        </li>
+                        <li>
+                            <p>
+                                <span class="number">免费</span>
+                            </p>
+
+                            <div class="gutter"></div>
+                        </li>
+                        <li>
+                            <p>
+                                <span class="number">可定制</span>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="big-title fade-animate-y">核心能力</div>
+        <div class="list-tp1 fade-animate-y">
+            <div class="max-width-pc">
+                <div class="list-tp1-item">
+                    <div class="item-image-background"></div>
+                    <div class="item-image"></div>
+                    <div class="item-line"></div>
+                    <div class="item-title">应用级管理</div>
+                    <div class="item-text">
+                        “包管理”将现网文件按照统一的目录规则组织保存，并定义好规范的启停脚本，支持现网程序的实例查看和版本管理。
+                    </div>
+                </div>
+                <div class="list-tp1-item">
+                    <div class="item-image-background"></div>
+                    <div class="item-image image2"></div>
+                    <div class="item-line"></div>
+                    <div class="item-title">秒级变更</div>
+                    <div class="item-text">
+                        版本变更通过增量文件更新的机制实现秒级发布，平均发布时间10秒。同时支持程序版本降级回退，异常处理快速可靠。
+                    </div>
+                </div>
+                <div class="list-tp1-item">
+                    <div class="item-image-background"></div>
+                    <div class="item-image image3"></div>
+                    <div class="item-line"></div>
+                    <div class="item-title">进程管理</div>
+                    <div class="item-text">
+                        支持程序单个或多个进程的启、停管理，可自定义启停脚本。通过crontab实现进程挂掉后的自动拉起功能。
+                    </div>
+                </div>
+                <div class="list-tp1-item">
+                    <div class="item-image-background"></div>
+                    <div class="item-image image4"></div>
+
+                    <div class="item-line"></div>
+                    <div class="item-title">个性定制</div>
+                    <div class="item-text">
+                        支持Jenkins定制接入，支持SaltStack通道及多云管理，支持自定义自己的运维工具。
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="accordion">
+            <div class="max-width-pc">
+                <div class="accordion-title fade-animate-y">应用场景</div>
+                <ul class="fade-animate-y">
+                    <li class="accordion-item active">
+                        <a>应用程序标准化</a>
+
+                        <div class="item-content">
+                            <div class="content-text">
+                                <p>程序不同版本分支运行在多台机器，运行环境不统一，需要人工记录版本和设备的对应关系。</p>
+                                <p>织云Lite将现网程序通过统一的规则组织起来，配置好启停脚本，使得所有程序的管理界面风格统一，降低维护成本。</p>
+                            </div>
+                            <div class="accordion-item-image">
+                                <div class="scene1"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="accordion-item">
+                        <a>版本发布变更</a>
+
+                        <div class="item-content">
+                            <div class="content-text">
+                                <p>手工操作发布替换线上系统程序文件，没有自动化版本管理工具，出问题时难以回滚。</p>
+                                <p>织云Lite提供版本管理和版本间diff功能，具备秒级发布和一键化回滚操作的能力。</p>
+                            </div>
+                            <div class="accordion-item-image">
+                                <div class="scene2"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="accordion-item">
+                        <a>变更日志回溯</a>
+
+                        <div class="item-content">
+                            <div class="content-text">
+                                <p>不同团队成员操作线上机器，生产环境的操作无统一记录，追溯困难。</p>
+                                <p>织云Lite提供 文件包、版本、IP地址等详细操作变更记录，方便管理员快速查看和回滚。</p>
+                            </div>
+                            <div class="accordion-item-image">
+                                <div class="scene3"></div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="accordion-tabs-line-default  fade-animate-y"></div>
+                <div class="accordion-tabs-line  fade-animate-y"></div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="max-width-pc">
+            <ul class="list-link">
+                <li class="link-logo">
+                    <div></div>
+                </li>
+                <li class="link-item">
+                    <a href="/">
+                        <p class="item-text">产品</p>
+                    </a>
+                </li>
+                <li class="link-item">
+                    <a href="/userlist.html">
+                        <p class="item-text">解决方案</p>
+                    </a>
+                </li>
+                <li class="link-item">
+                    <a href="https://cloud.tencent.com/document/product/609" target="_blank">
+                        <p class="item-text">文档中心</p>
+                    </a>
+                </li>
+                <li class="link-item">
+                    <a href="/about.html">
+                        <p class="item-text">关于我们</p>
+                    </a>
+                </li>
+            </ul>
+            <div class="qr-code">
+                <div class="qr-code-image"></div>
+                <p class="qr-code--title">关注织云</p>
+            </div>
+            <div class="contact">
+                <span class="contact-title">联系方式</span>
+                <span>E-Mail: contactus_zy@tencent.com</span>
+            </div>
+            <div class="copyright">
+                <p>Copyright © 2013 - 2018 Tencent Cloud. All Right Reserved.</p>
+                <p>腾讯云 版权所有</p>
+            </div>
+        </div>
+    </div>
+<script type="text/javascript" src="/ubuild.dll.e83e29bc75b60fbb2e3a.js"></script><script type="text/javascript" src="/indexlite.3811025b.js"></script></body>
+
+</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <title>织云</title>
+    <meta name="keywords" content="织云,监控,运维,互联网">
+    <meta name="description" content="织云,监控,运维,互联网">
+    <script>
+        (function flexible(window, document) {
+            var docEl = document.documentElement;
+            var tid;
+            var dpr = window.devicePixelRatio || 1;
+            docEl.setAttribute("data-dpr", dpr);
+
+            function setRemUnit() {
+                var width = docEl.getBoundingClientRect().width;
+                if (width > 750) { // 设计稿的宽度是750px
+                    docEl.style.fontSize = 100 + 'px';
+                }
+                else {
+                    var rem = width / 7.5;
+                    docEl.style.fontSize = rem + 'px';
+                }
+            }
+
+            setRemUnit();
+
+            window.addEventListener('resize', function () {
+                clearTimeout(tid);
+                tid = setTimeout(setRemUnit, 200);
+            }, false);
+            window.addEventListener('pageshow', function (e) {
+                if (e.persisted) {
+                    clearTimeout(tid);
+                    tid = setTimeout(setRemUnit, 200);
+                }
+            }, false);
+        }(window, document));
+    </script>
+<link rel="shortcut icon" href="/favicon.ico"><link href="/about.099a5593.css" rel="stylesheet"></head>
+
+<body>
+    <div class="header">
+        <div class="wraper">
+            <a href="https://cloud.tencent.com/" target="_blank">
+                <div class="logo-first"></div>
+            </a>
+
+            <div class="gutter"></div>
+            <a href="/">
+                <div class="logo-second"></div>
+            </a>
+
+            <nav>
+                <div class="nav-mobile"><a class="nav-toggle" href="javascript:;"><span></span></a></div>
+                <ul class="nav-list">
+                    <li>
+                        <a href="javascript:;">产品</a>
+                        <ul class="nav-dropdown">
+                            <li>
+                                <a href="/index.html">企业版</a>
+                            </li>
+                            <li>
+                                <a href="/indexlite.html">社区版（Lite）</a>
+                            </li>
+                            <li>
+                                <a href="/indexmetis.html">Metis</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="/userlist.html">解决方案</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">文档中心</a>
+                        <ul class="nav-dropdown">
+                            <li>
+                                <a href="https://cloud.tencent.com/document/product/609" target="_blank">企业版</a>
+                            </li>
+                            <li>
+                                <a href="http://bbs.coc.tencent.com/forum.php?mod=forumdisplay&fid=36" target="_blank">社区版（Lite）</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="active">
+                        <a href="/about.html">关于我们</a>
+                    </li>
+                </ul>
+                <div class="nav-line"></div>
+            </nav>
+        </div>
+    </div>
+    <div class="container">
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <a href="/index.html">
+                        <div class="item-image">
+                            <p class="item-title">企业智能运维门户</p>
+                            <object><a href="/about.html#contact" class="item-btn">联系我们</a></object>
+                        </div>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="/indexlite.html">
+                        <div class="item-image">
+                            <div class="item-title">
+                                <p>织云Lite全新发布</p>
+                                <p class="title-note">极&nbsp;&nbsp;致&nbsp;&nbsp;简&nbsp;&nbsp;约，&nbsp;&nbsp;让&nbsp;&nbsp;运&nbsp;&nbsp;维&nbsp;&nbsp;变&nbsp;&nbsp;得&nbsp;&nbsp;简&nbsp;&nbsp;单</p>
+                                </p>
+                                <object><a href="http://bbs.coc.tencent.com/forum.php?mod=viewthread&tid=50" target="_bank" class="item-btn">立即下载</a></object>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="/indexmetis.html">
+                        <div class="item-image image2">
+                            <div class="item-title">
+                                <p>Metis全新发布</p>
+                                <p class="title-note">织云AIOps体系,智能运维应用实践</p>
+                                </p>
+                                <object><a href="https://wj.qq.com/s/2024612/b6d1" target="_bank" class="item-btn">联系体验</a></object>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true">‹</span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true">›</span>
+                </a>
+            </div>
+        </div>
+        <div class="content">
+            <div class="max-width-pc">
+                <p class="content-text">
+                    织云是智能一体化运维平台。使用织云的CMDB、持续部署模型可以实现业务与软件包、配置、脚本等运维对象的关联，获得高效部署的运维能力，并围绕业务应用场景，管理成本、效率、质量达到平衡。同时，织云具备多云管理能力，支持公有云、私有云、混合云IAAS架构，实现地域分布、集群分布的资源统一管理，企业可借助织云搭建多租户运维门户，助力企业构建完整的一体化运维体系。
+                </p>
+                <div class="contact">
+                    <a href="javascript:;" id="contact">
+                        <p class="contact-title">联系我们</p>
+                    </a>
+                    <p class="contact-line"></p>
+                    <div class="contact-info">
+                        <p>企业版：contactus_zy@tencent.com</p>
+                        <p>社区版（Lite）: <a href="http://bbs.coc.tencent.com" target="_bank">进入论坛</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="max-width-pc">
+            <ul class="list-link">
+                <li class="link-logo">
+                    <div></div>
+                </li>
+                <li class="link-item">
+                    <a href="/">
+                        <p class="item-text">产品</p>
+                    </a>
+                </li>
+                <li class="link-item">
+                    <a href="/userlist.html">
+                        <p class="item-text">解决方案</p>
+                    </a>
+                </li>
+                <li class="link-item">
+                    <a href="https://cloud.tencent.com/document/product/609" target="_blank">
+                        <p class="item-text">文档中心</p>
+                    </a>
+                </li>
+                <li class="link-item">
+                    <a href="/about.html">
+                        <p class="item-text">关于我们</p>
+                    </a>
+                </li>
+            </ul>
+            <div class="qr-code">
+                <div class="qr-code-image"></div>
+                <p class="qr-code--title">关注织云</p>
+            </div>
+            <div class="contact">
+                <span class="contact-title">联系方式</span>
+                <span>E-Mail: contactus_zy@tencent.com</span>
+            </div>
+            <div class="copyright">
+                <p>Copyright © 2013 - 2018 Tencent Cloud. All Right Reserved.</p>
+                <p>腾讯云 版权所有</p>
+            </div>
+        </div>
+    </div>
+<script type="text/javascript" src="/ubuild.dll.e83e29bc75b60fbb2e3a.js"></script><script type="text/javascript" src="/about.4fd72eac.js"></script></body>
+
+</html>

@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <title>织云</title>
+    <meta name="keywords" content="织云,监控,运维,互联网">
+    <meta name="description" content="织云,监控,运维,互联网">
+    <script>
+        (function flexible(window, document) {
+            var docEl = document.documentElement;
+            var tid;
+            var dpr = window.devicePixelRatio || 1;
+            docEl.setAttribute("data-dpr", dpr);
+
+            function setRemUnit() {
+                var width = docEl.getBoundingClientRect().width;
+                if (width > 750) { // 设计稿的宽度是750px
+                    docEl.style.fontSize = 100 + 'px';
+                }
+                else {
+                    var rem = width / 7.5;
+                    docEl.style.fontSize = rem + 'px';
+                }
+            }
+
+            setRemUnit();
+
+            window.addEventListener('resize', function () {
+                clearTimeout(tid);
+                tid = setTimeout(setRemUnit, 200);
+            }, false);
+            window.addEventListener('pageshow', function (e) {
+                if (e.persisted) {
+                    clearTimeout(tid);
+                    tid = setTimeout(setRemUnit, 200);
+                }
+            }, false);
+        }(window, document));
+    </script>
+<link rel="shortcut icon" href="/favicon.ico"><link href="/indexmetis.e7e9ab8b.css" rel="stylesheet"></head>
+
+<body>
+    <div class="header">
+        <div class="wraper">
+            <a href="https://cloud.tencent.com/" target="_blank">
+                <div class="logo-first"></div>
+            </a>
+
+            <div class="gutter"></div>
+            <a href="/">
+                <div class="logo-second"></div>
+            </a>
+
+            <nav>
+                <div class="nav-mobile"><a class="nav-toggle" href="javascript:;"><span></span></a></div>
+                <ul class="nav-list">
+                    <li class="active">
+                        <a href="javascript:;">产品</a>
+                        <ul class="nav-dropdown">
+                            <li>
+                                <a href="/index.html">企业版</a>
+                            </li>
+                            <li>
+                                <a href="/indexlite.html">社区版（Lite）</a>
+                            </li>
+                            <li class="active">
+                                <a href="/indexmetis.html">Metis</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="/userlist.html">解决方案</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">文档中心</a>
+                        <ul class="nav-dropdown">
+                            <li>
+                                <a href="https://cloud.tencent.com/document/product/609" target="_blank">企业版</a>
+                            </li>
+                            <li>
+                                <a href="http://bbs.coc.tencent.com/forum.php?mod=forumdisplay&fid=36" target="_blank">社区版（Lite）</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="/about.html">关于我们</a>
+                    </li>
+                </ul>
+                <div class="nav-line"></div>
+            </nav>
+        </div>
+    </div>
+    <div class="container">
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <a href="/indexmetis.html">
+                        <div class="item-image image2">
+                            <div class="item-title">
+                                <p>Metis全新发布</p>
+                                <p class="title-note">织云AIOps体系,智能运维应用实践</p>
+                                </p>
+                                <object><a href="https://wj.qq.com/s/2024612/b6d1" target="_bank" class="item-btn">联系体验</a></object>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="/index.html">
+                        <div class="item-image">
+                            <p class="item-title">企业智能运维门户</p>
+                            <object><a href="/about.html#contact" class="item-btn">联系我们</a></object>
+                        </div>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="/indexlite.html">
+                        <div class="item-image">
+                            <div class="item-title">
+                                <p>织云Lite全新发布</p>
+                                <p class="title-note">极&nbsp;&nbsp;致&nbsp;&nbsp;简&nbsp;&nbsp;约，&nbsp;&nbsp;让&nbsp;&nbsp;运&nbsp;&nbsp;维&nbsp;&nbsp;变&nbsp;&nbsp;得&nbsp;&nbsp;简&nbsp;&nbsp;单</p>
+                                </p>
+                                <object><a href="http://bbs.coc.tencent.com/forum.php?mod=viewthread&tid=50" target="_bank" class="item-btn">立即下载</a></object>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true">‹</span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true">›</span>
+                </a>
+            </div>
+        </div>
+        <div class="list-tp">
+            <div class="max-width-pc">
+                <div class="list-tp-item">
+                    <div class="item-image fade-animate-x-left"></div>
+                    <div class="item-title fade-animate-x-right">海量业务</div>
+                    <div class="item-text fade-animate-x-right">
+                        织云Metis是由腾讯海量业务的一体化运维体系中孵化而成，具备坚实的业务基础，在腾讯内部已涵盖超20万台服务器，超240万业务指标，保障了99.99%以上的业务可用率。
+                    </div>
+                    <ul class="describe-list margin-right-70 fade-animate-x-right">
+                        <li>
+                            <p>
+                                <span class="number">20W</span>
+                                <span class="describe big">+</span>
+                            </p>
+                            <p class="instructions">服务器节点</p>
+                            <div class="gutter"></div>
+                        </li>
+                        <li>
+                            <p>
+                                <span class="number">240W</span>
+                                <span class="describe big">+</span>
+                            </p>
+                            <p class="instructions">业务指标</p>
+                            <div class="gutter"></div>
+                        </li>
+                        <li>
+                            <p>
+                                <span class="number">99.99%</span>
+                            </p>
+                            <p class="instructions">业务可用率</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="list-tp-item">
+                    <div class="item-image image2 fade-animate-x-right"></div>
+                    <div class="item-title fade-animate-x-left">开箱即用</div>
+                    <div class="item-text fade-animate-x-left">
+                        织云Metis是织云AIOps的应用实践，各组件高度解耦，可单独使用也可组合复用，助力企业高效、快速地搭建智能运维平台。
+                    </div>
+                    <ul class="describe-list fade-animate-x-left">
+                        <li>
+                            <p>
+                                <span class="number">全面</span>
+                            </p>
+                            <p class="instructions">功能丰富</p>
+                            <div class="gutter"></div>
+                        </li>
+                        <li>
+                            <p>
+                                <span class="number">便捷</span>
+                            </p>
+                            <p class="instructions">组合复用</p>
+                            <div class="gutter"></div>
+                        </li>
+                        <li>
+                            <p>
+                                <span class="number">高效</span>
+                            </p>
+                            <p class="instructions">智能运维</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="list-tp-item">
+                    <div class="item-image image3 fade-animate-x-left"></div>
+                    <div class="item-title fade-animate-x-right">智能学习</div>
+                    <div class="item-text fade-animate-x-right">
+                        织云Metis具备智能的检测、分析、决策等能力，同时支持用户对输出结果进行反馈，系统根据反馈结果矫正学习，对源业务特性加强理解。
+                    </div>
+                    <ul class="describe-list fade-animate-x-right">
+                        <li>
+                            <p>
+                                <span class="number">通用</span>
+                            </p>
+
+                            <p class="instructions">多元业务打造</p>
+                            <div class="gutter"></div>
+                        </li>
+                        <li>
+                            <p>
+                                <span class="number">标注</span>
+                            </p>
+
+                            <p class="instructions">个性化反馈</p>
+
+                            <div class="gutter"></div>
+                        </li>
+                        <li>
+                            <p>
+                                <span class="number">智能</span>
+                            </p>
+
+                            <p class="instructions">机器学习</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="big-title fade-animate-y">核心能力</div>
+        <div class="list-tp1 fade-animate-y">
+            <div class="max-width-pc">
+                <div class="list-tp1-item">
+                    <div class="item-image-background"></div>
+                    <div class="item-image"></div>
+                    <div class="item-line"></div>
+                    <div class="item-title">智能处理</div>
+                    <div class="item-text">
+                        支持NLP文本数据、结构化数据、网络包数据、系统日志数据等多样化、多元化数据的处理。
+                    </div>
+                </div>
+                <div class="list-tp1-item">
+                    <div class="item-image-background"></div>
+                    <div class="item-image image2"></div>
+                    <div class="item-line"></div>
+                    <div class="item-title">智能检测</div>
+                    <div class="item-text">
+                        支持基于时间序列的异常检测，基于日志类数据的文本检测，基于多维数据的瓶颈检测等。
+                    </div>
+                </div>
+                <div class="list-tp1-item">
+                    <div class="item-image-background"></div>
+                    <div class="item-image image3"></div>
+                    <div class="item-line"></div>
+                    <div class="item-title">智能分析</div>
+                    <div class="item-text">
+                        支持多元化数据（日志、网络、系统等）的分析能力。
+                    </div>
+                </div>
+                <div class="list-tp1-item">
+                    <div class="item-image-background"></div>
+                    <div class="item-image image4"></div>
+
+                    <div class="item-line"></div>
+                    <div class="item-title">智能决策</div>
+                    <div class="item-text">
+                        支持多样化运维场景（容量、调度、自愈等）的决策。
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="accordion">
+            <div class="max-width-pc">
+                <div class="accordion-title fade-animate-y">应用场景</div>
+                <ul class="fade-animate-y">
+                    <li class="accordion-item active">
+                        <a>质量保障</a>
+
+                        <div class="item-content">
+                            <p class="content-title">质量保障</p>
+                            <div class="content-text">
+                                <p>织云Metis 基于机器学习技术，提供时间序列异常检测、故障定位、瓶颈分析等能力。可在无人工干预下，智能地保障业务高质量运行。</p>
+                            </div>
+                            <div class="accordion-item-image">
+                                <div class="scene1"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="accordion-item">
+                        <a>效率提升</a>
+
+                        <div class="item-content">
+                            <p class="content-title">效率提升</p>
+                            <div class="content-text">
+                                <p>织云Metis基于自然语言处理、机器学习技术，提供智能客服、智能变更、智能决策，可显著提升运维效率。</p>
+                            </div>
+                            <div class="accordion-item-image">
+                                <div class="scene2"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="accordion-item">
+                        <a>成本管理</a>
+
+                        <div class="item-content">
+                            <p class="content-title">成本管理</p>
+                            <div class="content-text">
+                                <p>织云Metis基于大数据智能分析技术，提供资源（设备、带宽、存储等）管理能力，适用于成本优化、资源优化、容量规划、性能优化等多种场景。</p>
+                            </div>
+                            <div class="accordion-item-image">
+                                <div class="scene3"></div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="max-width-pc">
+            <ul class="list-link">
+                <li class="link-logo">
+                    <div></div>
+                </li>
+                <li class="link-item">
+                    <a href="/">
+                        <p class="item-text">产品</p>
+                    </a>
+                </li>
+                <li class="link-item">
+                    <a href="/userlist.html">
+                        <p class="item-text">解决方案</p>
+                    </a>
+                </li>
+                <li class="link-item">
+                    <a href="https://cloud.tencent.com/document/product/609" target="_blank">
+                        <p class="item-text">文档中心</p>
+                    </a>
+                </li>
+                <li class="link-item">
+                    <a href="/about.html">
+                        <p class="item-text">关于我们</p>
+                    </a>
+                </li>
+            </ul>
+            <div class="qr-code">
+                <div class="qr-code-image"></div>
+                <p class="qr-code--title">关注织云</p>
+            </div>
+            <div class="contact">
+                <span class="contact-title">联系方式</span>
+                <span>E-Mail: contactus_zy@tencent.com</span>
+            </div>
+            <div class="copyright">
+                <p>Copyright © 2013 - 2018 Tencent Cloud. All Right Reserved.</p>
+                <p>腾讯云 版权所有</p>
+            </div>
+        </div>
+    </div>
+<script type="text/javascript" src="/ubuild.dll.e83e29bc75b60fbb2e3a.js"></script><script type="text/javascript" src="/indexmetis.92cb3471.js"></script></body>
+
+</html>

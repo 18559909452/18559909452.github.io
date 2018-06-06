@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <title>织云</title>
+    <meta name="keywords" content="织云,监控,运维,互联网">
+    <meta name="description" content="织云,监控,运维,互联网">
+    <script>
+        (function flexible(window, document) {
+            var docEl = document.documentElement;
+            var tid;
+            var dpr = window.devicePixelRatio || 1;
+            docEl.setAttribute("data-dpr", dpr);
+
+            function setRemUnit() {
+                var width = docEl.getBoundingClientRect().width;
+                if (width > 750) { // 设计稿的宽度是750px
+                    docEl.style.fontSize = 100 + 'px';
+                }
+                else {
+                    var rem = width / 7.5;
+                    docEl.style.fontSize = rem + 'px';
+                }
+            }
+
+            setRemUnit();
+
+            window.addEventListener('resize', function () {
+                clearTimeout(tid);
+                tid = setTimeout(setRemUnit, 200);
+            }, false);
+            window.addEventListener('pageshow', function (e) {
+                if (e.persisted) {
+                    clearTimeout(tid);
+                    tid = setTimeout(setRemUnit, 200);
+                }
+            }, false);
+        }(window, document));
+    </script>
+<link rel="shortcut icon" href="/favicon.ico"><link href="/userlist.4a76d093.css" rel="stylesheet"></head>
+
+<body>
+    <div class="header">
+        <div class="wraper">
+            <a href="https://cloud.tencent.com/" target="_blank">
+                <div class="logo-first"></div>
+            </a>
+
+            <div class="gutter"></div>
+            <a href="/">
+                <div class="logo-second"></div>
+            </a>
+
+            <nav>
+                <div class="nav-mobile"><a class="nav-toggle" href="javascript:;"><span></span></a></div>
+                <ul class="nav-list">
+                    <li>
+                        <a href="javascript:;">产品</a>
+                        <ul class="nav-dropdown">
+                            <li>
+                                <a href="/index.html">企业版</a>
+                            </li>
+                            <li>
+                                <a href="/indexlite.html">社区版（Lite）</a>
+                            </li>
+                            <li>
+                                <a href="/indexmetis.html">Metis</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="active">
+                        <a href="/userlist.html">解决方案</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">文档中心</a>
+                        <ul class="nav-dropdown">
+                            <li>
+                                <a href="https://cloud.tencent.com/document/product/609" target="_blank">企业版</a>
+                            </li>
+                            <li>
+                                <a href="http://bbs.coc.tencent.com/forum.php?mod=forumdisplay&fid=36" target="_blank">社区版（Lite）</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="/about.html">关于我们</a>
+                    </li>
+                </ul>
+                <div class="nav-line"></div>
+            </nav>
+        </div>
+    </div>
+    <div class="container">
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <div class="item-image image3">
+                        <p class="item-title">行业解决方案</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="section-title">织云满足各行业的运维需求</div>
+            <div class="section-note">助力企业快速构建一体化运维体系</div>
+        </div>
+        <div class="tp-list">
+            <div class="max-width-pc">
+                <div class="tp-list-center">
+                    <!--<div class="tp-item">
+                        <a href="/userdetail.html?type=shangqi">
+                            <div class="item-logo shangqi"></div>
+                            <div class="item-name">上汽集团</div>
+                            <div class="item-note">汽车</div>
+                        </a>
+                        <div class="item-describe">
+                            <p class="describe-title">上汽集团</p>
+
+                            <p>
+                                通过织云在腾讯的最佳实践经验，利用织云CMDB核心能力统一管理底层架构和业务应用。帮助汽车等传统行业实现运维一体化管理，建立标准化运维管理规范。
+                            </p>
+                            <a href="/userdetail.html?type=shangqi" target="_blank">进一步了解</a>
+                        </div>
+                    </div>-->
+                    <div class="tp-item">
+                        <a href="/userdetail.html?type=jingu">
+                            <div class="item-logo jingu"></div>
+                            <div class="item-name">银行</div>
+                            <!--<div class="item-note">银行</div>-->
+                        </a>
+                        <div class="item-describe">
+                            <p class="describe-title">银行</p>
+
+                            <p>
+                                通过织云的标准化运维理念和自动化运维理念，帮助传统金融行业快速构建运维能力，建立自己的金融DevOps运营体系，实现产品功能快速迭代开发上线。
+                            </p>
+                            <a href="/userdetail.html?type=jingu" target="_blank">进一步了解</a>
+                        </div>
+                    </div>
+                    <div class="tp-item">
+                        <a href="/userdetail.html?type=anxin">
+                            <div class="item-logo anxin"></div>
+                            <div class="item-name">保险</div>
+                            <!--<div class="item-note">保险</div>-->
+                        </a>
+                        <div class="item-describe">
+                            <p class="describe-title">保险</p>
+
+                            <p>
+                                利用织云多年的标准化运维和包管理经验，以及技术支持，助力保险行业互联网+的创新性技术升级，降低企业运营成本。
+                            </p>
+                            <a href="/userdetail.html?type=anxin" target="_blank">进一步了解</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="max-width-pc">
+            <ul class="list-link">
+                <li class="link-logo">
+                    <div></div>
+                </li>
+                <li class="link-item">
+                    <a href="/">
+                        <p class="item-text">产品</p>
+                    </a>
+                </li>
+                <li class="link-item">
+                    <a href="/userlist.html">
+                        <p class="item-text">解决方案</p>
+                    </a>
+                </li>
+                <li class="link-item">
+                    <a href="https://cloud.tencent.com/document/product/609" target="_blank">
+                        <p class="item-text">文档中心</p>
+                    </a>
+                </li>
+                <li class="link-item">
+                    <a href="/about.html">
+                        <p class="item-text">关于我们</p>
+                    </a>
+                </li>
+            </ul>
+            <div class="qr-code">
+                <div class="qr-code-image"></div>
+                <p class="qr-code--title">关注织云</p>
+            </div>
+            <div class="contact">
+                <span class="contact-title">联系方式</span>
+                <span>E-Mail: contactus_zy@tencent.com</span>
+            </div>
+            <div class="copyright">
+                <p>Copyright © 2013 - 2018 Tencent Cloud. All Right Reserved.</p>
+                <p>腾讯云 版权所有</p>
+            </div>
+        </div>
+    </div>
+<script type="text/javascript" src="/ubuild.dll.e83e29bc75b60fbb2e3a.js"></script><script type="text/javascript" src="/userlist.eb0d07a6.js"></script></body>
+
+</html>
